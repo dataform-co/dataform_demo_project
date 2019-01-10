@@ -1,0 +1,6 @@
+{
+    "defaultSchema": "dataform",
+    "assertionSchema": "dataform_assertions",
+    "warehouse": "bigquery",
+    "gcloudProjectId": "tada-analytics"
+}
