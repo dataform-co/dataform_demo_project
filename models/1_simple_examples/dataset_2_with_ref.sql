@@ -9,4 +9,4 @@ SELECT country as country,
 
 FROM ${ref("dataset_1")}
 
-GROUP BY 1, 2 
+GROUP BY 1, 2, 3
