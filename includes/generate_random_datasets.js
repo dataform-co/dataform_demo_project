@@ -2,7 +2,7 @@ function random_number(min,max){
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
-function render_script(){
+function time_series(){
     const countries = [
       "GB",
       "US",
