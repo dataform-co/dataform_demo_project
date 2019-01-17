@@ -1,5 +1,5 @@
 --js type("incremental");
---js where(`timestamp > (select max(timestamp) from ${self()})`);
+--js where(`timestamp > (select max(date) from ${self()})`);
 --js descriptor(["timestamp", "action"]);
 
 select timestamp, action
