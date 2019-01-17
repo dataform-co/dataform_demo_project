@@ -9,7 +9,7 @@
 countries.forEach(country => {
   publish("reporting_" + country)
     .query(ctx => `
-      select * from ${ref(dataset_1)}
+      select * from ${ctx.ref("dataset_1")}
       where country = ${country}
-      )`);
+      `);
 });
