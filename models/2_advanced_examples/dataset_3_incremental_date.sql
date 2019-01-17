@@ -1,6 +1,11 @@
 --js type("incremental");
 --js where(`timestamp > (select max(date) from ${self()})`);
---js descriptor(["timestamp", "action"]);
+--js descriptor(["date", "country", "revenue"]);
 
-select timestamp, action
-from weblogs.user_actions
+SELECT date,
+       country,
+       sum(revenue)
+       
+FROM ${ref("dataset_1")}
+
+GROUP BY 1
