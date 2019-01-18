@@ -1,3 +1,5 @@
+-- learn more on https://docs.dataform.co/guides/materializations/
+
 --js type("table");
 
 SELECT country as country,

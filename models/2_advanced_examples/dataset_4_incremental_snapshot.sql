@@ -1,3 +1,5 @@
+-- learn more on https://docs.dataform.co/guides/incremental-tables/
+
 --js type("incremental");
 --js where(`snapshot_date > (select max(snapshot_date) from ${self()})`);
 --js descriptor(["snapshot_date", "country"]);

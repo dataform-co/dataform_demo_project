@@ -1,3 +1,5 @@
+-- learn more on https://docs.dataform.co/guides/includes/
+
 function country_group(country){
   return `CASE
           WHEN ${country} IN ("US", "CA") THEN "NA"

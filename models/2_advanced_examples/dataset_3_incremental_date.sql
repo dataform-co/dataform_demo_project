@@ -1,3 +1,5 @@
+-- learn more on https://docs.dataform.co/guides/incremental-tables/
+
 --js type("incremental");
 --js where(`timestamp > (select max(date) from ${self()})`);
 --js descriptor(["date", "country", "revenue"]);

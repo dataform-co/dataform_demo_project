@@ -1,3 +1,5 @@
+-- learn more on https://docs.dataform.co/guides/materializations/
+
 SELECT  date as date,
         country as country,
         device_type as device_type,
