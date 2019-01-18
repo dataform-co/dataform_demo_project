@@ -1,4 +1,4 @@
--- learn more on https://docs.dataform.co/guides/includes/
+// learn more on https://docs.dataform.co/guides/includes/
 
 function render_script(table, dimensions, metrics) {
     return `

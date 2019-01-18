@@ -1,4 +1,4 @@
--- learn more on https://docs.dataform.co/guides/includes/
+// learn more on https://docs.dataform.co/guides/includes/
 
 function country_group(country){
   return `CASE
@@ -6,7 +6,7 @@ function country_group(country){
           WHEN ${country} IN ("GB", "FR", "DE", "IT", "PL") THEN "EU"
           WHEN ${country} IN ("AU") THEN ${country}
           ELSE "Other countries"
-          END`
+          END`;
 }
 
 module.exports = { country_group };

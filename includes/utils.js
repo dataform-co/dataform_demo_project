@@ -1,4 +1,4 @@
--- learn more on https://docs.dataform.co/guides/includes/
+// learn more on https://docs.dataform.co/guides/includes/
 
 function group_by(number){
   var string = "GROUP BY ";
