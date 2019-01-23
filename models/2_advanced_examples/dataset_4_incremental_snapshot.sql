@@ -10,4 +10,4 @@ SELECT current_date() as snapshot_date,
        
 FROM ${ref("dataset_2_with_ref")}
 
-GROUP BY 1
+GROUP BY 1, 2
