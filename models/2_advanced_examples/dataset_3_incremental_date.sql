@@ -1,12 +1,12 @@
 -- learn more on https://docs.dataform.co/guides/incremental-tables/
 
 --js type("incremental");
---js where(`timestamp > (select max(date) from ${self()})`);
+--js where(`date > (select max(date) from ${self()})`);
 --js descriptor(["date", "country", "revenue"]);
 
-SELECT date,
-       country,
-       sum(revenue)
+SELECT date as date,
+       country as country,
+       sum(revenue) as revenue
        
 FROM ${ref("dataset_1")}
 

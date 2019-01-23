@@ -5,9 +5,9 @@
 --js descriptor(["snapshot_date", "country"]);
 
 
-SELECT current_date() as snapshot_date,
+SELECT current_date as snapshot_date,
        country
        
 FROM ${ref("dataset_2_with_ref")}
 
-GROUP BY 1
+GROUP BY 1, 2

@@ -2,10 +2,10 @@
 
 function country_group(country){
   return `CASE
-          WHEN ${country} IN ("US", "CA") THEN "NA"
-          WHEN ${country} IN ("GB", "FR", "DE", "IT", "PL") THEN "EU"
-          WHEN ${country} IN ("AU") THEN ${country}
-          ELSE "Other countries"
+          WHEN ${country} IN ('US', 'CA') THEN 'NA'
+          WHEN ${country} IN ('GB', 'FR', 'DE', 'IT', 'PL') THEN 'EU'
+          WHEN ${country} IN ('AU') THEN ${country}
+          ELSE 'Other countries'
           END`;
 }
 
