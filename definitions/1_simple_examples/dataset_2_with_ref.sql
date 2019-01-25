@@ -1,4 +1,4 @@
--- learn more on https://docs.dataform.co/guides/materializations/
+-- learn more on https://docs.dataform.co/guides/tables/
 
 --js type("table");
 
