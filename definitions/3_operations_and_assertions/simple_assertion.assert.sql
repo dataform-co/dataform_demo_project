@@ -10,5 +10,8 @@ SELECT country,
 
 FROM (SELECT country, sum(revenue) as revenue FROM ${ref("dataset_1")} GROUP BY 1) d1
 LEFT JOIN (SELECT country, sum(revenue) as revenue FROM ${ref("dataset_2_with_ref")} GROUP BY 1) d2 USING (country)
+
+WHERE country <> 'GB'
 )
+
 WHERE d1_revenue <> d2_revenue
