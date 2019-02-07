@@ -1,5 +1,4 @@
 // learn more on https://docs.dataform.co/guides/js-api/
-
 const countries = [
     "GB",
     "US",
