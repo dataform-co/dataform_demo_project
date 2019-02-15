@@ -1,10 +1,10 @@
 // learn more on https://docs.dataform.co/guides/js-api/
 const countries = [
-    "GB",
-    "US",
-    "FR",
-    "TH",
-    "NG"
+    'GB',
+    'US',
+    'FR',
+    'TH',
+    'NG'
   ];
 
 countries.forEach(country => {

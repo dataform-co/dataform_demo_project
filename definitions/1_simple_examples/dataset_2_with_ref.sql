@@ -1,6 +1,8 @@
 -- learn more on https://docs.dataform.co/guides/tables/
 
 --js type("table");
+
+
 /*js
 const foo = 1;
 */
@@ -14,4 +16,4 @@ SELECT ${foo} as country,
 
 FROM ${ref("dataset_1")}
 
-GROUP BY 1, 2, 3
+GROUP BY 1, 2, 3 
