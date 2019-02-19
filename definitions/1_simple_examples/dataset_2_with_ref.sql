@@ -2,12 +2,7 @@
 
 --js type("table");
 
-
-/*js
-const foo = 1;
-*/
-
-SELECT ${foo} as country,
+SELECT country as country,
        ${mapping.country_group("country")} as country_group,
        device_type as device_type,
        sum(revenue) as revenue,
