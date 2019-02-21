@@ -1,3 +1,5 @@
+--js disabled();
+
 -- You can define js functions and variables within a SQL script like the following:
 
 /*js
