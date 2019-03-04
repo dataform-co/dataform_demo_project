@@ -9,6 +9,6 @@ SELECT country as country,
        sum(pageviews) as pageviews,
        sum(sessions) as sessions
 
-FROM ${ref("dataset_1")}
+FROM ${ref("dataset_1")} 
 
 GROUP BY 1, 2, 3 

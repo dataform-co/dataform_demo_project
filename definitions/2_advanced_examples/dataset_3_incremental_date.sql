@@ -2,7 +2,6 @@
 
 --js type("incremental");
 --js where(`date > (select max(date) from ${self()})`);
---js descriptor(["date", "country", "revenue"]);
 
 SELECT date as date,
        country as country,
