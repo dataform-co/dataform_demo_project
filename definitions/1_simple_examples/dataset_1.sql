@@ -21,4 +21,5 @@ FROM
   (SELECT current_date as date, 'TH' as country, 'tablet' as device_type, 129 as revenue, 925 as pageviews, 459 as sessions) UNION ALL
   (SELECT current_date as date, 'NG' as country, 'desktop' as device_type, 784 as revenue, 391 as pageviews, 197 as sessions) UNION ALL
   (SELECT current_date as date, 'NG' as country, 'mobile' as device_type, 511 as revenue, 551 as pageviews, 405 as sessions) UNION ALL
+  (SELECT current_date as date, 'NG' as country, 'tablet' as device_type, 244 as revenue, 964 as pageviews, 132 as sessions) UNION ALL
   (SELECT current_date as date, 'NG' as country, 'tablet' as device_type, 244 as revenue, 964 as pageviews, 132 as sessions)
