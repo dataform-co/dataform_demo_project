@@ -1,11 +1,13 @@
 -- learn more on https://docs.dataform.co/guides/tables/
 
+--js type("table");
+
 SELECT  date as date,
         country as country,
         device_type as device_type,
         revenue as revenue,
         pageviews as pageviews,
-        sessions as sessions
+        sessions as sessions 
 FROM 
   (SELECT current_date as date, 'GB' as country, 'desktop' as device_type, 578 as revenue, 415 as pageviews, 967 as sessions) UNION ALL
   (SELECT current_date as date, 'GB' as country, 'mobile' as device_type, 429 as revenue, 669 as pageviews, 888 as sessions) UNION ALL
