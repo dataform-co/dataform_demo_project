@@ -1,6 +1,6 @@
 -- learn more on https://docs.dataform.co/guides/tables/
 
---js type("table");
+--js type("view");
 
 SELECT  date as date,
         country as country,
@@ -25,3 +25,5 @@ FROM
   (SELECT current_date as date, 'NG' as country, 'mobile' as device_type, 511 as revenue, 551 as pageviews, 405 as sessions) UNION ALL
   (SELECT current_date as date, 'NG' as country, 'tablet' as device_type, 244 as revenue, 964 as pageviews, 132 as sessions) UNION ALL
   (SELECT current_date as date, 'NG' as country, 'tablet' as device_type, 244 as revenue, 964 as pageviews, 132 as sessions)
+
+
