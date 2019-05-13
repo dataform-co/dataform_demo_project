@@ -2,7 +2,6 @@
 
 --js type("table");
 
-
 SELECT country as country,
        ${mapping.country_group("country")} as country_group,
        device_type as device_type,
@@ -12,4 +11,4 @@ SELECT country as country,
 
 FROM ${ref("dataset_1")} 
 
-GROUP BY 1, 2, 3 
+GROUP BY 1, 2, 3
