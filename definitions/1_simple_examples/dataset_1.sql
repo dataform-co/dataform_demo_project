@@ -2,6 +2,7 @@
 
 --js type("view"); 
 
+
 SELECT  date as date,
         country as country,
         device_type as device_type,
