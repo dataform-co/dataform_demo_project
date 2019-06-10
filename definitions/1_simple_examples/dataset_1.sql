@@ -1,6 +1,6 @@
 -- learn more on https://docs.dataform.co/guides/tables/
 
---js type("view");
+--js type("table"); 
 
 SELECT  date as date,
         country as country,
