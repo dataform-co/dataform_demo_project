@@ -1,0 +1,15 @@
+-- learn more on https://docs.dataform.co/guides/incremental-tables/
+
+config { type: "incremental" }
+
+SELECT date as date,
+       country as country,
+       sum(revenue) as revenue
+       
+FROM ${ref("dataset_1")}
+
+GROUP BY 1,2
+
+incremental_where {
+    date > (select max(date) from ${self()})
+}
