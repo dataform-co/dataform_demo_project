@@ -1,7 +1,6 @@
 -- learn more on https://docs.dataform.co/guides/incremental-tables/
 
---js type("incremental");
---js where(`date > (select max(date) from ${self()})`);
+config { type: "incremental" }
 
 SELECT date as date,
        country as country,
@@ -10,3 +9,7 @@ SELECT date as date,
 FROM ${ref("dataset_1")}
 
 GROUP BY 1,2
+
+incremental_where {
+    date > (select max(date) from ${self()})
+}

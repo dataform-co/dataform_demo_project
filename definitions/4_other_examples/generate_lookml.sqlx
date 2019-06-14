@@ -1,10 +1,10 @@
---js disabled();
+config { disabled: true }
 
 /*
 The blocks commented below are used to generate the lookml for this dataset. 
 */
 
-/*js
+js {
 
 // Dimensions
 const dimensions = [
@@ -41,7 +41,7 @@ const derived_metrics = [
 { id: "gross_margin_rate", name: "Gross margin", measure_1: "gross_profit", measure_2: "gross_sales", type: "division", format: "percent_2"}
 ];
 
-*/
+}
 
 /*
 ${lookml_generator.create_view_code("dataform.ct_daily_reporting_stats", dimensions, metrics, derived_metrics)}
