@@ -1,5 +1,3 @@
-config { disabled: true }
-
 /*
 The blocks commented below are used to generate the lookml for this dataset. 
 */

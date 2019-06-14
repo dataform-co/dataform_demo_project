@@ -11,4 +11,5 @@ GROUP BY 1, 2
 
 incremental_where {
     snapshot_date > (select max(snapshot_date) from ${self()})
+    
 }
