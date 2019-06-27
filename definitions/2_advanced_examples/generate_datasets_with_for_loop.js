@@ -1,4 +1,5 @@
 // learn more on https://docs.dataform.co/guides/js-api/
+
 const countries = [
     'GB',
     'US',
@@ -10,7 +11,6 @@ const countries = [
 countries.forEach(country => {
   publish("reporting_" + country)
     .query(ctx => `
-      select * from ${ctx.ref("dataset_2_with_ref")}
-      where country = '${country}'
+      select '${country}' as country
       `);
 });
