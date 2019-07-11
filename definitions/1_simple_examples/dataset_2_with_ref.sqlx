@@ -1,7 +1,6 @@
 -- learn more on https://docs.dataform.co/guides/tables/
 
 config { type: "table" }
-jkhkj
 
 SELECT country as country,
        ${mapping.country_group("country")} as country_group,
