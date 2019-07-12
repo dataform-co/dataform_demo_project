@@ -1,0 +1,10 @@
+config {
+  type: "view",
+  name: "age_groups"
+}
+
+SELECT
+  FLOOR(age / 5) * 5 AS age_group,
+  COUNT(1) AS user_count
+FROM ${ref("ages")}
+GROUP BY age_group

@@ -1,0 +1,15 @@
+config {
+  type: "test",
+  dataset: "age_groups"
+}
+
+input "ages" {
+  SELECT 15 AS age UNION ALL
+  SELECT 21 AS age UNION ALL
+  SELECT 24 AS age UNION ALL
+  SELECT 34 AS age
+}
+
+SELECT 15 AS age_group, 1 AS user_count UNION ALL
+SELECT 20 AS age_group, 2 AS user_count UNION ALL
+SELECT 30 AS age_group, 1 AS user_count
