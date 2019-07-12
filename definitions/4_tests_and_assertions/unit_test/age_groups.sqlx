@@ -1,6 +1,5 @@
 config {
-  type: "view",
-  name: "age_groups"
+  type: "view"
 }
 
 SELECT
