@@ -1,3 +1,4 @@
+/*
 config {
   type: "view",
   fields: [
@@ -21,3 +22,5 @@ with customers_table as (
         (SELECT '5' as id, 'Alicia' as first_name, 'Brown' as last_name, 'alicia.brown@business.com' as email, 'US' as country) UNION ALL
         (SELECT '6' as id, 'Angelina' as first_name, 'Davis' as last_name, 'davis.angelina@gmail.zh' as email, 'US' as country) 
 )
+
+*/
