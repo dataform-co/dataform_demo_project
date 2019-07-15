@@ -1,1 +1,16 @@
-{}
+{
+  "schedules": [{
+    "name": "hourly",
+    "options": {
+      "actions": ["age_groups", "ages", "dataset_1"],
+      "includeDependencies": false,
+      "fullRefresh": false
+    },
+    "cron": "0 * * * *",
+    "notification": {
+      "emails": ["ghh@dataform.co"],
+      "onSuccess": true,
+      "onFailure": true
+    }
+  }]
+}
