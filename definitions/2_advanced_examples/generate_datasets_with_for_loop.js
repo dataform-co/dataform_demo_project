@@ -7,6 +7,7 @@ const countries = [
     'TH',
     'NG'
   ];
+  
 
 countries.forEach(country => {
   publish("reporting_" + country)
