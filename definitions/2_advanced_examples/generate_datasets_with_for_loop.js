@@ -7,9 +7,11 @@ const countries = [
     'TH',
     'NG'
   ];
+  
 
 countries.forEach(country => {
   publish("reporting_" + country)
+    .dependencies(["dataset_2_with_ref"])
     .query(ctx => `
       select '${country}' as country
       `);

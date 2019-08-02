@@ -1,0 +1,29 @@
+config {
+  type: "view"
+}
+
+
+SELECT first_name as first_name, age as age
+
+FROM
+  (SELECT 'Matt' as first_name, '1' as age) UNION ALL
+  (SELECT 'Julia' as first_name, '2' as age) UNION ALL
+  (SELECT 'John' as first_name, '3' as age) UNION ALL
+  (SELECT 'Patrick' as first_name, '4' as age) UNION ALL
+  (SELECT 'Alicia' as first_name, '5' as age) UNION ALL
+  (SELECT 'Angelina' as first_name, '6' as age) UNION ALL
+  (SELECT 'Elizabeth' as first_name, '7' as age) UNION ALL
+  (SELECT 'Peter' as first_name, '8' as age) UNION ALL
+  (SELECT 'Mark' as first_name, '9' as age) UNION ALL
+  (SELECT 'Ben' as first_name, '10' as age) UNION ALL
+  (SELECT 'Catherine' as first_name, '11' as age) UNION ALL
+  (SELECT 'George' as first_name, '12' as age) UNION ALL
+  (SELECT 'Victoria' as first_name, '13' as age) UNION ALL
+  (SELECT 'William' as first_name, '14' as age) UNION ALL
+  (SELECT 'Charles' as first_name, '15' as age) UNION ALL
+  (SELECT 'Megan' as first_name, '16' as age) UNION ALL
+  (SELECT 'Louise' as first_name, '17' as age) UNION ALL
+  (SELECT 'Erika' as first_name, '18' as age) UNION ALL
+  (SELECT 'Robert' as first_name, '19' as age) UNION ALL
+  (SELECT 'Jean' as first_name, '20' as age)
+    
