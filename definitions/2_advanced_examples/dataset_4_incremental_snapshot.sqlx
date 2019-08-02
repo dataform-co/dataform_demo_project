@@ -1,5 +1,5 @@
 -- learn more on https://docs.dataform.co/guides/incremental-tables/
-
+-- test commet
 config { type: "incremental" }
 
 SELECT current_date as snapshot_date,
