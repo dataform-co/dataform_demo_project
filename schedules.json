@@ -1,6 +1,7 @@
 {
   "schedules": [{
     "name": "daily",
+    "disabled": true,
     "options": {
       "includeDependencies": false,
       "fullRefresh": false
