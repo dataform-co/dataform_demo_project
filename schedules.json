@@ -1,1 +1,15 @@
-{}
+{
+  "schedules": [{
+    "name": "daily",
+    "options": {
+      "includeDependencies": false,
+      "fullRefresh": false
+    },
+    "cron": "26 17 * * *",
+    "notification": {
+      "emails": ["dan@dataform.co"],
+      "onSuccess": false,
+      "onFailure": true
+    }
+  }]
+}
