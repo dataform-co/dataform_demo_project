@@ -25,18 +25,5 @@
       "onSuccess": true,
       "onFailure": true
     }
-  }, {
-    "name": "hourly_2",
-    "options": {
-      "actions": ["dataset_1", "dataset_2_with_ref", "dataset_3_incremental_date"],
-      "includeDependencies": false,
-      "fullRefresh": false
-    },
-    "cron": "37 */1 * * *",
-    "notification": {
-      "emails": ["ghh@dataform.co"],
-      "onSuccess": true,
-      "onFailure": true
-    }
   }]
 }
