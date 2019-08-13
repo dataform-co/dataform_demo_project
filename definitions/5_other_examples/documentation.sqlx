@@ -1,0 +1,22 @@
+config {
+  type: "table",
+  description: "This table contains revenue, pageviews and sessions stats per country and device",
+  columns:{
+    date: "Timestamp",
+    country: "Country of the user",
+    revenue: "Revenue is USD in floating FX",
+    pageviews: "Pageviews count from Google Analytics",
+    sessions: "Sessions count from Google Analytics"
+    }
+}
+
+SELECT  date as date,
+        country as country,
+        device_type as device_type,
+        revenue as revenue,
+        pageviews as pageviews,
+        sessions as sessions
+
+FROM ${ref("dataset_1")}
+
+
