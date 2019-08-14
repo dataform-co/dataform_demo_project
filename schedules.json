@@ -8,21 +8,8 @@
     },
     "cron": "26 17 * * *",
     "notification": {
-      "emails": ["dan@dataform.co"],
+      "emails": ["dan@dataform.co", "dan@dataform.co", "dan@dataform.co", "dan@dataform.co", "dan@dataform.co", "dan@dataform.co", "dan@dataform.co", "dan@dataform.co", "dan@dataform.co", "dan@dataform.co"],
       "onSuccess": false,
-      "onFailure": true
-    }
-  }, {
-    "name": "hourly",
-    "options": {
-      "actions": ["dataset_1", "dataset_2_with_ref", "dataset_3_incremental_date"],
-      "includeDependencies": false,
-      "fullRefresh": false
-    },
-    "cron": "17 */1 * * *",
-    "notification": {
-      "emails": ["ghh@dataform.co"],
-      "onSuccess": true,
       "onFailure": true
     }
   }]
