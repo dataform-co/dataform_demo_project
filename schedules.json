@@ -8,7 +8,7 @@
     },
     "cron": "26 17 * * *",
     "notification": {
-      "emails": ["dan@dataform.co", "dan@dataform.co", "dan@dataform.co", "dan@dataform.co", "dan@dataform.co", "dan@dataform.co", "dan@dataform.co", "dan@dataform.co", "dan@dataform.co", "dan@dataform.co"],
+      "emails": ["dan@dataform.co"],
       "onSuccess": false,
       "onFailure": true
     }
