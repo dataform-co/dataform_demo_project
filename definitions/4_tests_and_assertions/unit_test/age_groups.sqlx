@@ -7,3 +7,4 @@ SELECT
   COUNT(1) AS user_count
 FROM ${ref("ages")}
 GROUP BY age_group
+ORDER BY age_group
