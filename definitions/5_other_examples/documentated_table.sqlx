@@ -1,6 +1,6 @@
 config {
   type: "table",
-  description: "This table contains revenue, pageviews and sessions stats per country and device",
+  description: "description",
   columns:{
     date: "Timestamp",
     country: "Country of the user",
