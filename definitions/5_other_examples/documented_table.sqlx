@@ -1,5 +1,6 @@
 config {
   type: "table",
+  tags: ["core tables"],
   description: "description",
   columns:{
     date: "Timestamp",
