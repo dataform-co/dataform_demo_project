@@ -11,6 +11,5 @@ FROM ${ref("dataset_1")}
 GROUP BY 1,2
 
 incremental_where {
-    date > (select max(date) from ${self()})
-    
+    date > (select max(date) from ${self()}) 
 }
