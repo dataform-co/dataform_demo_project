@@ -1,6 +1,6 @@
 -- learn more on https://docs.dataform.co/guides/tables/
 
-config { type: "view" }
+config { type: "table" }
 
 SELECT country as country,
        ${mapping.country_group("country")} as country_group,
@@ -12,4 +12,3 @@ SELECT country as country,
 FROM ${ref("dataset_1")} 
 
 GROUP BY 1, 2, 3 
-
