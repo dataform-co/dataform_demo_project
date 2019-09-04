@@ -1,2 +1,2 @@
-config {type: "declaration", name: "dataset_2", schema: "override" }
+--config {type: "declaration", name: "dataset_2", schema: "override" }
 
