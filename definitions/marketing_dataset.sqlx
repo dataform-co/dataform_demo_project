@@ -1,0 +1,3 @@
+config { type: "table" }
+
+SELECT 1 as one

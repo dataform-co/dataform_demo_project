@@ -12,5 +12,18 @@
       "onSuccess": false,
       "onFailure": true
     }
+  }, {
+    "name": "refresh_marketing",
+    "options": {
+      "actions": ["marketing_dataset"],
+      "includeDependencies": false,
+      "fullRefresh": false
+    },
+    "cron": "45 */1 * * *",
+    "notification": {
+      "emails": ["ghh@dataform.co"],
+      "onSuccess": true,
+      "onFailure": true
+    }
   }]
 }
