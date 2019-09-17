@@ -1,6 +1,9 @@
 -- learn more on https://docs.dataform.co/guides/incremental-tables/
--- test commet
-config { type: "incremental" }
+
+config { 
+    type: "incremental",
+    tag: "advanced" 
+}
 
 SELECT current_date as snapshot_date,
        country

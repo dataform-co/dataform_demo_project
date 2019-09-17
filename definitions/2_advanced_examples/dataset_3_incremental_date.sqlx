@@ -1,6 +1,9 @@
 -- learn more on https://docs.dataform.co/guides/incremental-tables/
 
-config { type: "incremental" }
+config { 
+    type: "incremental",
+    tag: "advanced" 
+}
 
 SELECT date as date,
        country as country,

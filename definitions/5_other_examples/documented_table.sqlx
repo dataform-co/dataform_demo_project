@@ -1,13 +1,14 @@
 config {
   type: "table",
   tags: ["core tables"],
-  description: "description",
+  description: "This table contains revenue, pageviews and sessions from Google analytics",
   columns:{
     date: "Timestamp",
     country: "Country of the user",
     revenue: "Revenue is USD in floating FX",
     pageviews: "Pageviews count from Google Analytics",
-    sessions: "Sessions count from Google Analytics"
+    sessions: "Sessions count from Google Analytics",
+    device_type: "Desktop, Tablet or Mobile"
     }
 }
 

@@ -1,4 +1,7 @@
-config { type: "table" } 
+config { 
+    type: "table",
+    tag: "advanced" 
+}
 
 ${script_builder.render_script(ref("dataset_1"),
                                ["country", "device_type"],

@@ -1,6 +1,9 @@
 -- learn more on https://docs.dataform.co/guides/assertions/
 
-config { type: "assertion" }
+config { 
+    type: "assertion",
+    tag: "advanced" 
+}
 
 with customers_table as (
     SELECT id as id, first_name as first_name, last_name as last_name, email as email, country as country
