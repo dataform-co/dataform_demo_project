@@ -8,7 +8,7 @@ config {
     revenue: "Revenue is USD in floating FX",
     pageviews: "Pageviews count from Google Analytics",
     sessions: "Sessions count from Google Analytics",
-    device_type: "Desktop, Tablet or Mobile"
+    device_type: "Desktop, Tablet or Mobile  "
     }
 }
 
@@ -19,6 +19,6 @@ SELECT  date as date,
         pageviews as pageviews,
         sessions as sessions
 
-FROM ${ref("dataset_1")}
+FROM ${ref("dataset_1")} 
 
 
