@@ -1,6 +1,6 @@
 config {
   type: "table",
-  tags: ["core tables"],
+  tags: ["core"],
   description: "This table contains revenue, pageviews and sessions from Google analytics",
   columns:{
     date: "Timestamp",

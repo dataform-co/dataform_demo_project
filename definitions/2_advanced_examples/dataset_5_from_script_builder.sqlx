@@ -1,6 +1,6 @@
 config { 
     type: "table",
-    tag: "advanced" 
+    tags: ["advanced"]
 }
 
 ${script_builder.render_script(ref("dataset_1"),
