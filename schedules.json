@@ -1,4 +1,9 @@
 {
+  "defaultNotification": {
+    "emails": ["dan@dataform.co"],
+    "onSuccess": true,
+    "onFailure": true
+  },
   "schedules": [{
     "name": "daily",
     "disabled": true,
@@ -6,11 +11,6 @@
       "includeDependencies": false,
       "fullRefresh": false
     },
-    "cron": "26 17 * * *",
-    "notification": {
-      "emails": ["dan@dataform.co"],
-      "onSuccess": false,
-      "onFailure": true
-    }
+    "cron": "26 17 * * *"
   }]
 }
