@@ -1,9 +1,4 @@
 {
-  "defaultNotification": {
-    "emails": ["dan@dataform.co"],
-    "onSuccess": true,
-    "onFailure": true
-  },
   "schedules": [{
     "name": "daily",
     "disabled": true,
