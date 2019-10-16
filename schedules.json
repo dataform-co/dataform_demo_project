@@ -1,11 +1,16 @@
 {
   "schedules": [{
-    "name": "daily",
+    "name": "hourly",
     "disabled": true,
     "options": {
       "includeDependencies": false,
       "fullRefresh": false
     },
-    "cron": "26 17 * * *"
+    "cron": "31 */1 * * *",
+    "notification": {
+      "emails": ["lewis@dataform.co"],
+      "onSuccess": false,
+      "onFailure": true
+    }
   }]
 }
