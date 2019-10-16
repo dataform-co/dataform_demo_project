@@ -1,6 +1,7 @@
 config { 
     type: "table",
-    tags: ["advanced"]
+    tags: ["advanced"],
+    disabled: true
 }
 
 ${script_builder.render_script(ref("dataset_1"),
