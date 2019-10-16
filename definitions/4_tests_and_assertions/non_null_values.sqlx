@@ -8,7 +8,7 @@ with customers_table as (
     SELECT id as id, first_name as first_name, last_name as last_name, email as email, country as country
     FROM
         (SELECT '1' as id, 'Matt' as first_name, 'Smith' as last_name, 'matts@hotmail.tz' as email, 'UK' as country) UNION ALL
-        (SELECT '1' as id, 'Matt' as first_name, 'Smith' as last_name, NULL as email, 'UK' as country) UNION ALL -- uncomment for assertion to fail
+        -- (SELECT '1' as id, 'Matt' as first_name, 'Smith' as last_name, NULL as email, 'UK' as country) UNION ALL -- uncomment for assertion to fail
         (SELECT '2' as id, 'Julia' as first_name, 'Johnson' as last_name, 'jjohnson@company.net' as email, 'UK' as country) UNION ALL
         (SELECT '3' as id, 'John' as first_name, 'Williams' as last_name, 'jw@mail.ro' as email, 'FR' as country) UNION ALL
         (SELECT '4' as id, 'Patrick' as first_name, 'Jones' as last_name, 'pajones87@qq.co' as email, 'US' as country) UNION ALL
