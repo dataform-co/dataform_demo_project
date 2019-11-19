@@ -31,4 +31,3 @@ FROM
   (SELECT current_date as date, 'NG' as country, 'tablet' as device_type, 244 as revenue, 964 as pageviews, 132 as sessions) UNION ALL
   (SELECT current_date as date, 'NG' as country, 'tablet' as device_type, 244 as revenue, 964 as pageviews, 132 as sessions)
 
-
