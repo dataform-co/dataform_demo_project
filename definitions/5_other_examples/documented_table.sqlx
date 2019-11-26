@@ -8,7 +8,8 @@ config {
     revenue: "Revenue is USD in floating FX",
     pageviews: "Pageviews count from Google Analytics",
     sessions: "Sessions count from Google Analytics",
-    device_type: "Desktop, Tablet or Mobile  "
+    device_type: "Desktop, Tablet or Mobile",
+    new_field: "test"
     }
 }
 
