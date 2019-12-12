@@ -6,9 +6,22 @@
       "includeDependencies": false,
       "fullRefresh": false
     },
-    "cron": "41 */1 * * *",
+    "cron": "50 14 * * *",
     "notification": {
       "emails": ["dan@dataform.co", "ben@dataform.co"],
+      "onSuccess": false,
+      "onFailure": true
+    }
+  }, {
+    "name": "hourly",
+    "options": {
+      "includeDependencies": false,
+      "fullRefresh": false,
+      "tags": ["hourly"]
+    },
+    "cron": "57 */1 * * *",
+    "notification": {
+      "emails": ["dan@dataform.co"],
       "onSuccess": false,
       "onFailure": true
     }
