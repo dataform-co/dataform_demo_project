@@ -1,0 +1,3 @@
+config { type: "view" }
+
+select 'test123' like 'test%'

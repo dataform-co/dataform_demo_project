@@ -1,6 +1,7 @@
 {
     "defaultSchema": "dataform_demo",
     "assertionSchema": "dataform_demo_assertions",
-    "warehouse": "redshift"
+    "warehouse": "redshift",
+    "idempotentActionRetries": 100
 }
  
