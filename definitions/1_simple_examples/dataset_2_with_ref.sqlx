@@ -2,7 +2,7 @@
 
 config { 
     type: "table",
-    tags: ["core"]
+    tags: ["core", "hourly"]
 }
 
 SELECT country as country,
