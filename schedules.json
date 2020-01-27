@@ -8,10 +8,13 @@
     },
     "cron": "50 14 * * *",
     "notification": {
-      "emails": ["dan@dataform.co", "ben@dataform.co"],
       "onSuccess": false,
-      "onFailure": true
-    }
+      "onFailure": false
+    },
+    "notifications": [{
+      "events": ["failure"],
+      "channels": ["Email-all"]
+    }]
   }, {
     "name": "hourly",
     "options": {
@@ -21,9 +24,23 @@
     },
     "cron": "57 */1 * * *",
     "notification": {
-      "emails": ["dan@dataform.co"],
       "onSuccess": false,
-      "onFailure": true
+      "onFailure": false
+    },
+    "notifications": [{
+      "events": ["failure"],
+      "channels": ["email-analytics"]
+    }]
+  }],
+  "notificationChannels": [{
+    "name": "Email-all",
+    "email": {
+      "to": ["dan@dataform.co", "ben@dataform.co"]
+    }
+  }, {
+    "name": "email-analytics",
+    "email": {
+      "to": ["dan@dataform.co"]
     }
   }]
 }

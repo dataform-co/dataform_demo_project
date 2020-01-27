@@ -1,8 +1,9 @@
 -- learn more on https://docs.dataform.co/guides/tables/
 config { 
     type: "table",
-    tags: ["core"]
+    tags: ["core", "hourly"]
 }
+
 
 SELECT  date as date,
         country as country,

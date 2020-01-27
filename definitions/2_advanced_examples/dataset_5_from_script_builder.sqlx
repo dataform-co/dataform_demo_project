@@ -1,6 +1,6 @@
 config { 
     type: "table",
-    tags: ["advanced"],
+    tags: ["advanced", "hourly"],
     disabled: true
 }
 

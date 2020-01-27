@@ -2,7 +2,7 @@
 
 config { 
     type: "incremental",
-    tags: ["advanced"]
+    tags: ["advanced", "hourly"]
 }
 
 SELECT current_date as snapshot_date,
