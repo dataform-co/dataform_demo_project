@@ -2,7 +2,10 @@
 
 config { 
     type: "table",
-    tags: ["core", "hourly"]
+    tags: ["core", "hourly"],
+    assertions: {
+        uniqueKey: ["country"]
+    }
 }
 
 SELECT country as country,

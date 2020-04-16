@@ -1,0 +1,5 @@
+config {
+    type: "assertion"
+}
+
+select * from input where id is null

@@ -1,7 +1,8 @@
 -- learn more on https://docs.dataform.co/guides/tables/
 config { 
     type: "table",
-    tags: ["core", "hourly"]
+    tags: ["core", "hourly"],
+    dependencies: ["assertion"]
 }
 
 
