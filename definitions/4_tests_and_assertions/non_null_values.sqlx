@@ -1,8 +1,7 @@
 -- learn more on https://docs.dataform.co/guides/assertions/
 
 config { 
-    type: "assertion",
-    tag: "advanced" 
+    type: "assertion"
 }
 
 SELECT 
