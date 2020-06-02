@@ -4,6 +4,8 @@ config {
     tags: ["core", "hourly"]
 }
 
+-- commit
+
 
 SELECT  date as date,
         country as country,
