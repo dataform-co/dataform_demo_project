@@ -6,6 +6,8 @@ config {
 
 -- commit
 
+-- commit 2
+
 
 SELECT  date as date,
         country as country,
