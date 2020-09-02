@@ -1,6 +1,5 @@
 config {
-  type: "assertion",
-  tag: "advanced"
+  type: "assertion"
 }
 
 -- learn more on https://docs.dataform.co/guides/assertions/
