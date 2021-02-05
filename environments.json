@@ -1,0 +1,62 @@
+{
+  "environments": [
+    {
+      "name": "production",
+      "configOverride": {},
+      "schedules": [
+        {
+          "name": "daily",
+          "disabled": false,
+          "options": {
+            "includeDependencies": false,
+            "fullRefresh": false
+          },
+          "cron": "50 14 * * *",
+          "notification": {
+            "onSuccess": false,
+            "onFailure": false
+          },
+          "notifications": [
+            {
+              "events": ["failure"],
+              "channels": ["Email-all"]
+            }
+          ]
+        },
+        {
+          "name": "hourly",
+          "options": {
+            "includeDependencies": false,
+            "fullRefresh": false,
+            "tags": ["hourly"]
+          },
+          "cron": "57 */1 * * *",
+          "notification": {
+            "onSuccess": false,
+            "onFailure": false
+          },
+          "notifications": [
+            {
+              "events": ["failure"],
+              "channels": ["email-analytics"]
+            }
+          ]
+        }
+      ],
+      "notificationChannels": [
+        {
+          "name": "Email-all",
+          "email": {
+            "to": ["dan@dataform.co", "ben@dataform.co"]
+          }
+        },
+        {
+          "name": "email-analytics",
+          "email": {
+            "to": ["dan@dataform.co"]
+          }
+        }
+      ]
+    }
+  ]
+}
