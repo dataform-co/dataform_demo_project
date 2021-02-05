@@ -35,5 +35,3 @@ function time_series(){
     return query;
 
 }
-
-module.exports = { render_script };
